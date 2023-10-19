@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Classification</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <section>
+        <div class="topnav">
+            <a  class="active" href="#">CODE WIZARDS</a>
+            <a  href="#">Telegram</a>
+            <a  href="#">Contact Us</a>
+            <a  href="#">Made With &#10084;</a>
+        </div>
+    </section>
+   
+    <section class="main_view">
+        <div class="container">
+            <h1>News Classification True/False </h1>
+            <form method="POST" action="/classify">
+                <label for="news_text">Enter the text to classify:</label>
+                <textarea id="news_text" name="news_text" rows="4" cols="50"></textarea>
+                <button type="submit">Classify</button>
+            </form>
+        </div>
+    </section>
+   
+    
+</body>
+</html>
+
+   
